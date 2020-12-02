@@ -1,5 +1,5 @@
 import { writable } from "svelte/store";
-const fakeData = [...new Array(10)].map((_, i) => ({
+const fakeData = [...new Array(5)].map((_, i) => ({
     state: i % 2 == 0,
     text: `${i + 1}-todo-todo-todo-todo-todo-todo-todo-todo`,
 }));
@@ -10,4 +10,4 @@ const fakeData = [...new Array(10)].map((_, i) => ({
 //     },
 // ]);
 export const todos = writable(fakeData);
-export const selected = writable(3);
+export const selected = writable(1);
